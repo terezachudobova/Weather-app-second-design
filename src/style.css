@@ -1,21 +1,32 @@
 h1 {
   font-family: "Prata", serif;
 }
-
 h3 {
   font-size: 14px;
   font-family: "Roboto", sans-serif;
   font-weight: 100;
 }
-
 p {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
 }
-
 a {
   text-decoration: none;
-  color: white;
+  color: #004043;
+}
+input {
+  background: #f4f1db;
+  color: #3a9191;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  padding-left: 8px;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
 }
 
 .container {
@@ -27,38 +38,37 @@ a {
   padding-right: 16px;
 }
 
-input {
-  background: rgba(0, 0, 0, 0.2);
-  color: white;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  padding-left: 8px;
-}
-
 #current-location-button {
-  background: rgba(0, 0, 0, 0.2);
-  color: white;
+  background: #f4f1db;
   border: 1px solid transparent;
   border-radius: 4px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
   padding-left: 8px;
 }
 
 .wrapper {
-  background: rgba(0, 0, 0, 0.3);
-  border: 1px solid transparent;
-  border-radius: 8px;
+  background: #f4f1db;
   margin-top: 20px;
-  color: white;
+  color: #3a9191;
+  border-radius: 14px;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
 }
 
-.text-inside-wrapper {
+.wrapper-one {
+  padding: 35px;
+}
+.wrapper-two {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 74%,
+    rgba(78, 139, 144, 1) 77%
+  );
+}
+.wrapper-three {
   padding: 18px;
+  background: #4e8b90;
+  color: #f8f5df;
+  border-radius: 0 0 14px 14px;
 }
-
 .large-button {
   text-align: right;
 }
@@ -91,6 +101,7 @@ input {
 
 #large-icon-temperature {
   font-size: 50px;
+  color: #88bdbd;
 }
 
 #temperature-description {
@@ -101,6 +112,9 @@ input {
   text-transform: capitalize;
 }
 
+#humidity-and-wind {
+  text-align: center;
+}
 .coded-by {
   color: rgba(255, 255, 255, 0.4);
   font-size: 11px;

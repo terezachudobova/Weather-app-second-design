@@ -14,28 +14,27 @@
     <script src="https://kit.fontawesome.com/5a9b8d8f6d.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="./src/style.css">
-    <title>Tereza's Weather App</title>
+    <title>🌲 Weather App 🏔</title>
 </head>
 
 <body>
     <div class="container">
-
         <form class="top-search" id="searching-form">
             <div class="row">
-                <div class="col-6 large-button">
+                <div class="col-7 large-button">
                     <input type="search" placeholder="Enter a city.." class="search-field shadow-sm" id="city-input">
                 </div>
                 <div class="col-1 small-button">
                     <input type="submit" value="🔍" class="search-button shadow-sm">
                 </div>
-                <div class="col-5 small-button">
-                    <button id="current-location-button">📌</button>
+                <div class="col-4 small-button">
+                    <button class="shadow-sm" id="current-location-button">📍</button>
                 </div>
             </div>
         </form>
 
         <div class="wrapper">
-            <div class="text-inside-wrapper">
+            <div class="wrapper-one">
                 <h1 id="city-name">Prague</h1>
                 <h3 id="last-updated-time">
                     Last updated: Saturday 16:21
@@ -51,7 +50,7 @@
                                     id="farenheit">°F</a></span>
                         </h2>
                     </div>
-                    <div class="col-6">
+                    <div class="col-6" id="humidity-and-wind">
                         <p>
                             Humidity: <span id="humidity">93</span>%
                             <br>
@@ -59,7 +58,11 @@
                         </p>
                     </div>
                 </div>
-                <br>
+            </div>
+            <div class="wrapper-two">
+                <img src="./img/green-landscape.png" alt="">
+            </div>
+            <div class="wrapper-three">
                 <div class="row">
                     <div class="col-2">
                         <p>
@@ -115,7 +118,7 @@
                             -1°C
                         </p>
                     </div>
-
+                    </div>
 
                 </div>
             </div>
