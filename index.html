@@ -1,12 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Prata&family=Roboto:wght@100;300;400;500;700&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://kit.fontawesome.com/5a9b8d8f6d.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./src/style.css">
+    <title>Tereza's Weather App</title>
 </head>
+
 <body>
-    
+    <div class="container">
+
+        <form class="top-search" id="searching-form">
+            <div class="row">
+                <div class="col-6 large-button">
+                    <input type="search" placeholder="Enter a city.." class="search-field shadow-sm" id="city-input">
+                </div>
+                <div class="col-1 small-button">
+                    <input type="submit" value="🔍" class="search-button shadow-sm">
+                </div>
+                <div class="col-5 small-button">
+                    <button id="current-location-button">📌</button>
+                </div>
+            </div>
+        </form>
+
+        <div class="wrapper">
+            <div class="text-inside-wrapper">
+                <h1 id="city-name">Prague</h1>
+                <h3 id="last-updated-time">
+                    Last updated: Saturday 16:21
+                </h3>
+                <h3 id="temperature-description">
+                    Cloudy
+                </h3>
+                <div class="row">
+                    <div class="col-6">
+                        <h2><i class="fas fa-cloud" id="large-icon-temperature"></i>
+                            <span class="number-of-degrees" id="temperature">19</span>
+                            <span class="celsius-and-farenheit"><a href="#" id="celsius">°C</a> | <a href="#"
+                                    id="farenheit">°F</a></span>
+                        </h2>
+                    </div>
+                    <div class="col-6">
+                        <p>
+                            Humidity: <span id="humidity">93</span>%
+                            <br>
+                            Wind: <span id="wind">6</span> km/h
+                        </p>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-2">
+                        <p>
+                            Sun
+                            <br>
+                            <i class="fas fa-cloud" id="days-icon-temperature"></i>
+                            <br>
+                            3°C
+                        </p>
+                    </div>
+                    <div class="col-2">
+                        <p>
+                            Mon
+                            <br>
+                            <i class="fas fa-cloud-sun" id="days-icon-temperature"></i>
+                            <br>
+                            5°C
+                        </p>
+                    </div>
+                    <div class="col-2">
+                        <p>
+                            Tue
+                            <br>
+                            <i class="fas fa-cloud-sun" id="days-icon-temperature"></i>
+                            <br>
+                            7°C
+                        </p>
+                    </div>
+                    <div class="col-2">
+                        <p>
+                            Wed
+                            <br>
+                            <i class="fas fa-cloud" id="days-icon-temperature"></i>
+                            <br>
+                            3°C
+                        </p>
+                    </div>
+                    <div class="col-2">
+                        <p>
+                            Thu
+                            <br>
+                            <i class="fas fa-snowflake" id="days-icon-temperature"></i>
+                            <br>
+                            -2°C
+                        </p>
+                    </div>
+                    <div class="col-2">
+                        <p>
+                            Fri
+                            <br>
+                            <i class="fas fa-snowflake" id="days-icon-temperature"></i>
+                            <br>
+                            -1°C
+                        </p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <br>
+        <h3 class="coded-by">An <a href="https://github.com/terezachudobova/terezas-weather-app">open-source code</a> by
+            Tereza Chudobová</h3>
+        <script src="./src/script.js"></script>
+
+
 </body>
+
 </html>
