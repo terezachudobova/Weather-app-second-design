@@ -18,6 +18,28 @@ function displayWeatherCondition(response) {
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(response.data.wind.speed);
   document.querySelector("#temperature-description").innerHTML = response.data.weather[0].description;
+
+  let largeIcon = document.querySelector("#large-icon-temperature");
+  let iconId = response.data.weather[0].icon;
+  if (iconId === "01d" || iconId === "01n") {
+  largeIcon.setAttribute("class", "fas fa-sun"); 
+  } if (iconId === "02d" || iconId === "02n") {
+  largeIcon.setAttribute("class", "fas fa-cloud-sun");
+  } if (iconId === "03d" || iconId === "03n" || iconId === "04d" || iconId === "04n") {
+  largeIcon.setAttribute("class", "fas fa-cloud");
+  } if (iconId === "09d" || iconId === "09n") {
+  largeIcon.setAttribute("class", "fas fa-cloud-rain");
+  } if (iconId === "10d" || iconId === "10n") {
+  largeIcon.setAttribute("class", "fas fa-cloud-showers-heavy");
+  } if (iconId === "11d" || iconId === "11n") {
+  largeIcon.setAttribute("class", "fas fa-bolt");
+} if (iconId === "13d" || iconId === "13n") {
+  largeIcon.setAttribute("class", "far fa-snowflake");
+} if (iconId === "50d" || iconId === "50n") {
+  largeIcon.setAttribute("class", "fas fa-smog");
+}
+
+
 }
 
 function searchCity (city) {
