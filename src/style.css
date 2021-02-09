@@ -12,7 +12,7 @@ p {
 }
 a {
   text-decoration: none;
-  color: #004043;
+  color: #4ea2a6;
 }
 input {
   background: #f4f1db;
@@ -29,6 +29,9 @@ img {
   display: block;
 }
 
+a:hover {
+  color: #004043;
+}
 .container {
   max-width: 700px;
   margin-right: auto;
@@ -42,7 +45,7 @@ img {
   background: #f4f1db;
   border: 1px solid transparent;
   border-radius: 4px;
-  padding-left: 8px;
+  padding-left: 5px;
 }
 
 .wrapper {
@@ -88,11 +91,11 @@ img {
 }
 
 .celsius-and-farenheit {
-  font-size: 14px;
+  font-size: 12px;
   font-family: "Roboto", sans-serif;
   font-weight: 100;
   position: relative;
-  top: -23px;
+  top: -25px;
 }
 
 #days-icon-temperature {
@@ -116,6 +119,13 @@ img {
   text-align: center;
 }
 .coded-by {
-  color: rgba(255, 255, 255, 0.4);
+  color: #155359;
   font-size: 11px;
+  text-align: center;
+}
+.social-media-icons {
+  font-size: 22px;
+  display: block;
+  text-align: center;
+  padding-bottom: 30px;
 }
