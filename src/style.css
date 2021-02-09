@@ -1,13 +1,15 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
 h1 {
-  font-family: "Prata", serif;
+  font-family: "Bodoni Moda", serif;
+  text-transform: capitalize;
 }
 h3 {
   font-size: 14px;
-  font-family: "Roboto", sans-serif;
   font-weight: 100;
 }
 p {
-  font-family: "Roboto", sans-serif;
   font-weight: 100;
 }
 a {
@@ -19,7 +21,6 @@ input {
   color: #3a9191;
   border: 1px solid transparent;
   border-radius: 4px;
-  font-family: "Roboto", sans-serif;
   font-weight: 100;
   padding-left: 8px;
 }
@@ -33,7 +34,7 @@ a:hover {
   color: #004043;
 }
 .container {
-  max-width: 700px;
+  max-width: 600px;
   margin-right: auto;
   margin-left: auto;
   margin-top: 75px;
@@ -58,6 +59,7 @@ a:hover {
 
 .wrapper-one {
   padding: 35px;
+  padding-bottom: 0;
 }
 .wrapper-two {
   background: linear-gradient(
@@ -86,13 +88,11 @@ a:hover {
 
 .number-of-degrees {
   font-size: 45px;
-  font-family: "Roboto", sans-serif;
   font-weight: 100;
 }
 
 .celsius-and-farenheit {
   font-size: 12px;
-  font-family: "Roboto", sans-serif;
   font-weight: 100;
   position: relative;
   top: -25px;
@@ -108,10 +108,6 @@ a:hover {
 }
 
 #temperature-description {
-  text-transform: capitalize;
-}
-
-#city-name {
   text-transform: capitalize;
 }
 
