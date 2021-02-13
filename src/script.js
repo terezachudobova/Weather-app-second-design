@@ -13,8 +13,9 @@ function formatDate(date) {
 }
     
 function displayWeatherCondition(response) {
+  celsiusTemperature = response.data.main.temp;
   document.querySelector("#city-name").innerHTML = response.data.name;
-  document.querySelector("#temperature").innerHTML = Math.round(response.data.main.temp);
+  document.querySelector("#temperature").innerHTML = Math.round(celsiusTemperature);
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(response.data.wind.speed);
   document.querySelector("#temperature-description").innerHTML = response.data.weather[0].description;
@@ -38,8 +39,6 @@ function displayWeatherCondition(response) {
 } if (iconId === "50d" || iconId === "50n") {
   largeIcon.setAttribute("class", "fas fa-smog");
 }
-
-
 }
 
 function searchCity (city) {
@@ -70,18 +69,22 @@ function getCurrentLocation(event) {
 function showFarenheit(event) {
   event.preventDefault();
   let degreesFarenheit = document.querySelector("#temperature");
+  celsiusButton.classList.remove("active");
+  farenheitButton.classList.add("active");
   let temperature = degreesFarenheit.innerHTML;
   temperature = Number(temperature);
-  degreesFarenheit.innerHTML = Math.round((temperature * 9)/5 + 32);
+  degreesFarenheit.innerHTML = Math.round((celsiusTemperature * 9)/5 + 32);
 }
   
 function showCelsius(event) {
   event.preventDefault();
   let degreesCelsius = document.querySelector("#temperature");
-  let temperature = degreesCelsius.innerHTML;
-  temperature = Number(temperature);
-  degreesCelsius.innerHTML = Math.round((temperature - 32)/ 1.80000);;
+  farenheitButton.classList.remove("active");
+  celsiusButton.classList.add("active");
+  degreesCelsius.innerHTML = Math.round(celsiusTemperature);
 }
+
+let celsiusTemperature = null;
 
 let currentTime = document.querySelector("#last-updated-time");
   let now = new Date();

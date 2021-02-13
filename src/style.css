@@ -14,7 +14,7 @@ p {
 }
 a {
   text-decoration: none;
-  color: #4ea2a6;
+  color: #004043;
 }
 input {
   background: #f4f1db;
@@ -31,7 +31,7 @@ img {
 }
 
 a:hover {
-  color: #004043;
+  color: #4ea2a6;
 }
 .container {
   max-width: 600px;
@@ -98,6 +98,11 @@ a:hover {
   top: -25px;
 }
 
+.celsius-and-farenheit .active {
+  color: #3a9191;
+  cursor: default;
+}
+
 #days-icon-temperature {
   font-size: 25px;
 }
@@ -115,7 +120,7 @@ a:hover {
   text-align: center;
 }
 .coded-by {
-  color: #155359;
+  color: #3a9191;
   font-size: 11px;
   text-align: center;
 }
