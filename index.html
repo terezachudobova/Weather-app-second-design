@@ -13,22 +13,25 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://kit.fontawesome.com/5a9b8d8f6d.js" crossorigin="anonymous"></script>
 
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
+
     <link rel="stylesheet" href="./src/style.css">
-    <title>🌲 Weather App</title>
+    <title>The Vintage Weather App 🌙✨</title>
 </head>
 
 <body>
     <div class="container">
         <form class="top-search" id="searching-form">
             <div class="row">
-                <div class="col-6 large-button">
-                    <input type="search" placeholder="Enter a city.." class="search-field shadow" id="city-input" autocomplete="off" spellcheck="false">
+                <div class="col-7 large-button">
+                    <input type="search" placeholder="Enter a city.." class="search-field shadow btn" id="city-input" autocomplete="off" spellcheck="false">
                 </div>
-                <div class="col-1 small-button">
-                    <input type="submit" value="🔍" class="search-button shadow">
+                <div class="col-2 small-button">
+                    <button type="submit" class="search-button shadow btn">🔍</button>
                 </div>
-                <div class="col-5 small-button">
-                    <button class="shadow" id="current-location-button">📌</button>
+                <div class="col-3 small-button">
+                    <button type="button" class="btn shadow" id="current-location-button">📌</button>
                 </div>
             </div>
         </form>
