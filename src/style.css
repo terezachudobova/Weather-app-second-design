@@ -22,7 +22,7 @@ a {
   padding-left: 4px;
   font-family: "Roboto", sans-serif;
   font-weight: 100;
-  user-select: text;
+  -webkit-user-select: auto;
 }
 img {
   max-width: 100%;
