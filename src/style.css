@@ -44,6 +44,7 @@ a:hover {
 .top-search {
   display: inline-block;
   text-align: center;
+  max-width: 600px;
 }
 .search-field {
   background: #f4f1db;
