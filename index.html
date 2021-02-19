@@ -21,14 +21,14 @@
     <div class="container">
         <form class="top-search" id="searching-form">
             <div class="row">
-                <div class="col-7 large-button">
-                    <input type="search" placeholder="Enter a city.." class="search-field shadow" id="city-input" autocomplete="off">
+                <div class="col-6 large-button">
+                    <input type="search" placeholder="Enter a city.." class="search-field shadow" id="city-input" autocomplete="off" spellcheck="false">
                 </div>
                 <div class="col-1 small-button">
                     <input type="submit" value="🔍" class="search-button shadow">
                 </div>
-                <div class="col-4 small-button">
-                    <button class="shadow" id="current-location-button">📍</button>
+                <div class="col-5 small-button">
+                    <button class="shadow" id="current-location-button">📌</button>
                 </div>
             </div>
         </form>
@@ -36,12 +36,12 @@
         <div class="wrapper">
             <div class="wrapper-one">
                 <h1 id="city-name">Prague</h1>
-                <h3 id="last-updated-time">
+                <p id="last-updated-time">
                     Last updated: Saturday 16:21
-                </h3>
-                <h3 id="temperature-description">
+                </p>
+                <p id="temperature-description">
                     Cloudy
-                </h3>
+                </p>
                 <div class="row">
                     <div class="col-6">
                         <h2><i class="fas fa-cloud" id="large-icon-temperature"></i>
@@ -62,70 +62,15 @@
                 <img src="./img/green-landscape.png" alt="">
             </div>
             <div class="wrapper-three">
-                <div class="row">
-                    <div class="col-2">
-                        <p>
-                            Sun
-                            <br>
-                            <i class="fas fa-cloud" id="days-icon-temperature"></i>
-                            <br>
-                            3°C
-                        </p>
-                    </div>
-                    <div class="col-2">
-                        <p>
-                            Mon
-                            <br>
-                            <i class="fas fa-cloud-sun" id="days-icon-temperature"></i>
-                            <br>
-                            5°C
-                        </p>
-                    </div>
-                    <div class="col-2">
-                        <p>
-                            Tue
-                            <br>
-                            <i class="fas fa-cloud-sun" id="days-icon-temperature"></i>
-                            <br>
-                            7°C
-                        </p>
-                    </div>
-                    <div class="col-2">
-                        <p>
-                            Wed
-                            <br>
-                            <i class="fas fa-cloud" id="days-icon-temperature"></i>
-                            <br>
-                            3°C
-                        </p>
-                    </div>
-                    <div class="col-2">
-                        <p>
-                            Thu
-                            <br>
-                            <i class="fas fa-snowflake" id="days-icon-temperature"></i>
-                            <br>
-                            -2°C
-                        </p>
-                    </div>
-                    <div class="col-2">
-                        <p>
-                            Fri
-                            <br>
-                            <i class="fas fa-snowflake" id="days-icon-temperature"></i>
-                            <br>
-                            -1°C
-                        </p>
-                    </div>
-                    </div>
-
+                <div class="row" id="forecast">
+                    
                 </div>
             </div>
         </div>
         <br>
-        <h3 class="coded-by">An <a href="https://github.com/terezachudobova/terezas-weather-app">open-source code</a> by
+        <p class="coded-by">An <a href="https://github.com/terezachudobova/terezas-weather-app">open-source code</a> by
             Tereza Chudobová
-        </h3>
+        </p>
         <span class="social-media-icons">
         <a href="https://github.com/terezachudobova" target="_blank"><i class="fab fa-github-square"></i></a>
         &nbsp;

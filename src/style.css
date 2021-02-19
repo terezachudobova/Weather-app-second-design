@@ -1,16 +1,14 @@
-body {
+* {
   font-family: "Roboto", sans-serif;
+  font-weight: 100;
 }
 h1 {
   font-family: "Bodoni Moda", serif;
   text-transform: capitalize;
 }
-h3 {
-  font-size: 14px;
-  font-weight: 100;
-}
 p {
-  font-weight: 100;
+  font-size: 14px;
+  margin: 0 auto;
 }
 a {
   text-decoration: none;
@@ -21,8 +19,6 @@ input {
   color: #3a9191;
   border: 1px solid transparent;
   border-radius: 4px;
-  font-weight: 100;
-  padding-left: 8px;
 }
 img {
   max-width: 100%;
@@ -41,14 +37,16 @@ a:hover {
   padding-left: 16px;
   padding-right: 16px;
 }
+.large-button {
+  text-align: right;
+}
 
 #current-location-button {
   background: #f4f1db;
   border: 1px solid transparent;
   border-radius: 4px;
-  padding-left: 5px;
+  text-align: left;
 }
-
 .wrapper {
   background: #f4f1db;
   margin-top: 20px;
@@ -56,7 +54,6 @@ a:hover {
   border-radius: 14px;
   box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
 }
-
 .wrapper-one {
   padding: 30px;
   padding-bottom: 0;
@@ -74,50 +71,21 @@ a:hover {
   color: #f8f5df;
   border-radius: 0 0 14px 14px;
 }
-.large-button {
-  text-align: right;
-}
 
-.small-button {
-  text-align: left;
-}
-
-.col-2 {
+#forecast {
   text-align: center;
 }
-
 .number-of-degrees {
   font-size: 45px;
-  font-weight: 100;
 }
-
 .celsius-and-farenheit {
-  font-size: 12px;
-  font-weight: 100;
   position: relative;
   top: -25px;
+  font-size: 12px;
 }
-
 .celsius-and-farenheit .active {
   color: #3a9191;
   cursor: default;
-}
-
-#days-icon-temperature {
-  font-size: 25px;
-}
-
-#large-icon-temperature {
-  font-size: 50px;
-  color: #88bdbd;
-}
-
-#temperature-description {
-  text-transform: capitalize;
-}
-
-#humidity-and-wind {
-  text-align: center;
 }
 .coded-by {
   color: #3a9191;
@@ -129,4 +97,22 @@ a:hover {
   display: block;
   text-align: center;
   padding-bottom: 30px;
+}
+#days-icon-temperature {
+  font-size: 25px;
+}
+#large-icon-temperature {
+  font-size: 50px;
+  color: #88bdbd;
+}
+#temperature-description {
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+#humidity-and-wind {
+  text-align: center;
+}
+#forecast-temperature,
+#forecast-time {
+  font-size: 14px;
 }
