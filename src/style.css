@@ -46,16 +46,13 @@ a:hover {
   justify-content: center;
   align-items: center;
 }
-.top-search {
-  display: inline-block;
-  text-align: center;
-  max-width: 600px;
-}
+
 .search-field {
   background: #f4f1db;
   border-radius: 10px;
   text-align: start;
   padding-left: 8px;
+  outline: none;
 }
 .search-field:hover {
   background: #eee9c7;
