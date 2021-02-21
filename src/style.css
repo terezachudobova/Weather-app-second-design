@@ -41,6 +41,11 @@ a:hover {
   padding-left: 16px;
   padding-right: 16px;
 }
+#searching-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .top-search {
   display: inline-block;
   text-align: center;
